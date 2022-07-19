@@ -51,6 +51,15 @@ write.csv(SNPs_per_study_2,file = "data/SNPs_per_study.csv",
 write.csv(SNPs_per_study_unique,file = "data/GWAS_catalog_top_BRCA_SNPs_and_studies.csv",
           row.names = F)
 
-#Genotyping platforms
-
-
+#O que faremos com esses dados?
+#
+# - focar nos top 5 SNPs presentes em mais artigos (rs10069690-T,rs4784227-T,rs13387042-A,rs4973768-T,rs10941679-G)
+# - ler os artigos onde os SNPs foram associados:
+#   - verificar se há sobreposição de amostras
+#   - anotar o tamanho das amostras (N casos, N controles)
+#   - anotar ancestralidade das populações
+#   - anotar plataforma de genotipagem
+#   - anotar tipo de estimativa do tamanho de efeito: beta ou OR
+#   
+#   
+# - Fazer meta análise dos estudos selecionados
